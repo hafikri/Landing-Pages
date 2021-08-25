@@ -1,0 +1,42 @@
+:root {
+  --mainColor: #fff;
+  --secondaryColor: #000;
+  --acsentColor: #ffb548;
+  --fontFamilySansSerif: "Open sans", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: var(--fontFamilySansSerif);
+  background-color: var(--secondaryColor);
+}
+
+.navbar a {
+  color: var(--mainColor);
+}
+
+a.navbar-brand {
+  font-size: 24px;
+  color: var(--mainColor) !important;
+}
+
+.nav-item a {
+  font-size: 12px;
+  color: var(--mainColor) !important;
+}
+/* Akhir Navbar */
+
+/* Desktop Version */
+@media (min-width: 992px) {
+  /* Navbar */
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .navbar-brand {
+    margin-right: -300px;
+  }
+
+  /* Akhir Navbar */
+}
