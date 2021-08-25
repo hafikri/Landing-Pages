@@ -6,6 +6,12 @@
   --fontFamilyDisplay: "Bebas Neue", cursive;
 }
 
+/* body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+} */
+
 .tombol {
   width: 150px;
   height: 40px;
@@ -20,6 +26,10 @@
 }
 
 /* Navbar */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
 .navbar {
   text-transform: uppercase;
   font-weight: 800;
@@ -49,6 +59,22 @@ section.jumbotron {
   color: var(--mainColor);
   padding-top: 100px;
   margin-top: -1px;
+  position: relative;
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
 }
 
 .jumbotron h1 {
@@ -70,6 +96,31 @@ section.jumbotron {
   margin-bottom: -10px;
 }
 /* Akhir Jumbotron */
+
+/* About & Gallery */
+.about-gallery {
+  background-image: url(../img/the-games-bg.jpg);
+  background-color: var(--secondaryColor);
+  height: 400px;
+  position: relative;
+}
+
+.about-gallery .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about-gallery::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(farthest-side at left center, #ffffff00 35%, #00000000, #080a0b);
+  background-color: #0f0f0fde;
+  position: absolute;
+  bottom: 0;
+}
+/* Akhir About & Gallery */
 
 /* Desktop Version */
 @media (min-width: 992px) {
@@ -99,7 +150,8 @@ section.jumbotron {
   /* Jumbotron */
   section.jumbotron {
     padding-top: 315px;
-    margin-top: -90px;
+    margin-top: -75px;
+    margin-bottom: 0;
   }
   .jumbotron h1 {
     font-family: var(--fontFamilyDisplay);
@@ -128,4 +180,40 @@ section.jumbotron {
     margin-bottom: -10px;
   }
   /* Akhir Jumbotron */
+
+  /* About & Gallery */
+  .about-gallery {
+    background-image: url(../img/the-games-bg.jpg);
+    background-color: var(--secondaryColor);
+    height: 960px;
+  }
+
+  .about-gallery .container {
+    padding-top: 280px;
+    color: var(--mainColor);
+  }
+
+  .display-4,
+  .display-2 {
+    font-family: var(--fontFamilyDisplay);
+    font-weight: 400;
+  }
+
+  .display-2 {
+    font-size: 80px;
+    line-height: 65px;
+    letter-spacing: 3px;
+  }
+
+  .display-4 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+  }
+
+  .carousel {
+    padding-top: 30px;
+  }
+
+  /* Akhir About & Gallery */
 }
