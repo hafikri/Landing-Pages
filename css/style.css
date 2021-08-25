@@ -3,6 +3,20 @@
   --secondaryColor: #000;
   --acsentColor: #ffb548;
   --fontFamilySansSerif: "Open sans", sans-serif;
+  --fontFamilyDisplay: "Bebas Neue", cursive;
+}
+
+.tombol {
+  width: 150px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: linear-gradient(to bottom, #ffb548, #f3af34);
+  color: var(--secondaryColor);
+  font-family: var(--fontFamilySansSerif);
+  padding-top: 8px;
 }
 
 /* Navbar */
@@ -28,8 +42,50 @@ a.navbar-brand {
 }
 /* Akhir Navbar */
 
+/* Jumbotron */
+section.jumbotron {
+  background-image: url(../img/main-bg.jpg);
+  background-size: cover;
+  color: var(--mainColor);
+  padding-top: 100px;
+  margin-top: -1px;
+}
+
+.jumbotron h1 {
+  font-family: var(--fontFamilyDisplay);
+  font-size: 42px;
+}
+
+.jumbotron p {
+  font-family: var(--fontFamilySansSerif);
+  font-size: 14px;
+}
+
+.button-down p {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--mainColor);
+  font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: -10px;
+}
+/* Akhir Jumbotron */
+
 /* Desktop Version */
 @media (min-width: 992px) {
+  .tombol {
+    width: 260px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom, #ffb548, #f3af34);
+    color: var(--secondaryColor);
+    font-family: var(--fontFamilySansSerif);
+    padding-top: 15px;
+  }
+
   /* Navbar */
   .navbar {
     background-color: rgba(0, 0, 0, 0.5);
@@ -39,4 +95,37 @@ a.navbar-brand {
   }
 
   /* Akhir Navbar */
+
+  /* Jumbotron */
+  section.jumbotron {
+    padding-top: 315px;
+    margin-top: -90px;
+  }
+  .jumbotron h1 {
+    font-family: var(--fontFamilyDisplay);
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+  }
+
+  .jumbotron p {
+    font-family: var(--fontFamilySansSerif);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+  }
+
+  .button-down p {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--mainColor);
+    font-weight: 700;
+    margin-top: 285px;
+    margin-bottom: -10px;
+  }
+  /* Akhir Jumbotron */
 }
