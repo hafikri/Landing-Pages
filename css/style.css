@@ -271,6 +271,48 @@ table td {
 }
 /* Akhir System Requirement */
 
+/* Quotes */
+
+.quotes {
+  background-image: url(../img/scores.jpg);
+  padding: 150px 0;
+}
+
+.quotes h1.display-2 {
+  padding-bottom: 0;
+}
+
+.gamer-name {
+}
+
+.card {
+  font-family: var(--fontFamilySansSerif);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+h5.card-title {
+  color: var(--acsentColor);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+h6.card-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--mainColor);
+}
+
+.card-text {
+  color: var(--mainColor);
+  margin-top: 24px;
+  margin-bottom: -20px;
+}
+
+/* Akhir Quotes */
+
 /* Desktop Version */
 @media (min-width: 992px) {
   .tombol {
