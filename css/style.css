@@ -282,9 +282,6 @@ table td {
   padding-bottom: 0;
 }
 
-.gamer-name {
-}
-
 .card {
   font-family: var(--fontFamilySansSerif);
   margin-bottom: 20px;
@@ -312,6 +309,31 @@ h6.card-subtitle {
 }
 
 /* Akhir Quotes */
+
+/* Subscribe */
+.subscribe {
+  background-color: #020202;
+  padding: 100px 0 200px;
+}
+
+.teks-subscribe {
+  padding-left: 130px;
+  color: var(--mainColor);
+}
+
+.tombol-input {
+  width: 428px;
+  height: 60px;
+  top: 510.7px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--mainColor);
+}
+
+.teksmail {
+  color: var(--acsentColor);
+}
+
+/* Akhir Subscribe */
 
 /* Desktop Version */
 @media (min-width: 992px) {
