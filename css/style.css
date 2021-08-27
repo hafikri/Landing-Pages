@@ -6,12 +6,6 @@
   --fontFamilyDisplay: "Bebas Neue", cursive;
 }
 
-/* body {
-  margin: 0;
-  padding: 0;
-  background-color: #000;
-} */
-
 .tombol {
   width: 150px;
   height: 40px;
@@ -245,6 +239,37 @@ section.jumbotron {
 }
 
 /* Akhir Feature */
+
+/* System Requirement */
+
+.sysreq {
+  background-image: url(../img/requirements.jpg);
+  background-size: cover;
+  padding: 150px 0;
+}
+
+p.judul-sysreq {
+  font-size: 14px;
+  line-height: 0.5em;
+  font-weight: 400;
+  font-family: var(--fontFamilySansSerif);
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}
+
+.sysreq h1.display-2,
+p.judul-sysreq,
+table td {
+  color: var(--mainColor);
+}
+
+.judul-table {
+  font-family: var(--fontFamilySansSerif);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--acsentColor);
+}
+/* Akhir System Requirement */
 
 /* Desktop Version */
 @media (min-width: 992px) {
