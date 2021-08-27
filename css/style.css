@@ -176,20 +176,22 @@ section.jumbotron {
 /* Feature */
 .feature {
   background-image: url(../img/features.jpg);
+  height: 860px;
   background-size: cover;
 }
 
-/* .feature .col {
-  padding-top: 100px;
-} */
+.jarak-atas {
+  padding-top: 200px;
+}
 
+.jarak-bawah {
+  padding-bottom: 300px;
+}
 .feature .container {
   color: var(--mainColor);
-  padding: 100px 0;
 }
 
 .feature .display-2 {
-  margin-bottom: 100px;
   line-height: 65px;
 }
 
@@ -341,16 +343,11 @@ section.jumbotron {
 
   /* Feature */
 
-  .feature .col {
-    padding-top: 200px;
-  }
-
   .feature .container {
     color: var(--mainColor);
   }
 
   .feature .display-2 {
-    margin-bottom: 100px;
     line-height: 65px;
   }
 
