@@ -289,6 +289,18 @@ table td {
   background: rgba(255, 255, 255, 0.08) !important;
 }
 
+.card.evan {
+  margin-left: 200px;
+}
+
+.card.jada {
+  margin-left: 100px;
+}
+
+.card.aaron {
+  margin-left: 150px;
+}
+
 h5.card-title {
   color: var(--acsentColor);
   font-size: 24px;
@@ -334,6 +346,23 @@ h6.card-subtitle {
 }
 
 /* Akhir Subscribe */
+
+/* Footer */
+footer {
+  background-color: #020202;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+.line-footer {
+  border-top: 1px solid var(--mainColor);
+  width: 100%;
+  padding: 10px 0;
+}
+/* Akhir Footer */
 
 /* Desktop Version */
 @media (min-width: 992px) {
