@@ -338,7 +338,9 @@ h6.card-subtitle {
   height: 60px;
   top: 510.7px;
   background: rgba(255, 255, 255, 0.08);
-  color: var(--mainColor);
+  /* color: var(--mainColor); */
+  border: none;
+  color: var(--acsentColor);
 }
 
 .teksmail {
